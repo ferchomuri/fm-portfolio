@@ -1,0 +1,11 @@
+{
+  "name": "fm-portfolio",
+  "version": "1.0.0",
+  "description": "Fernando's portfolio",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fernando Murillo",
+  "license": "ISC"
+}
