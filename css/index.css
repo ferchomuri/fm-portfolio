@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+}
+
+.container-text {
+  color: #e5e5e5;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animation {
+  height: 50px;
+  overflow: hidden;
+  margin-left: 1rem;
+}
+
+.animation>div>div {
+  padding: 0.25rem 0.75rem;
+  height: 2.81rem;
+  margin-bottom: 2.81rem;
+  display: inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 10s infinite;
+}
+
+.first div {
+  background-color: #20a7d8;
+}
+
+.second div {
+  background-color: #CD921E;
+}
+
+.third div {
+  background-color: #c10528;
+}
+
+.fourth div {
+  background-color: #2e7d32;
+}
+
+.fifth div {
+  background-color: #ae22e6;
+}
+
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+
+  10% {
+    margin-top: 0;
+  }
+
+  20% {
+    margin-top: -5.70rem;
+  }
+
+  30% {
+    margin-top: -5.70rem;
+  }
+
+  40% {
+    margin-top: -11.75rem;
+  }
+
+  50% {
+    margin-top: -11.75rem;
+  }
+
+  60% {
+    margin-top: -17.50rem;
+  }
+
+  70% {
+    margin-top: -17.50rem;
+  }
+
+  80% {
+    margin-top: -23.28rem;
+  }
+
+  90% {
+    margin-top: -23.28rem;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+  }
+
+  .container-text {
+    height: 50px;
+    text-align: center;
+  }
+}
+
+/* For screens 768px and larger */
+@media (min-width: 768px) {
+  .main-container {
+    flex-direction: row;
+  }
+
+  .container-text {
+    height: 95vh;
+  }
+}
